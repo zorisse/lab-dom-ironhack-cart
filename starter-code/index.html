@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
-  <title>Ironhack cart</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>Ironhack cart</title>
+  </head>
+  <body>
+    <h1>Ironhack Merchandising Shop</h1>
+    <div id="productList">
+      <div class="container">
+        <div>Nom : <span class="Name"> Skate</span></div>
+        <div>Prix : <span class="Cost"> 23 </span>$</div>
+        <div>
+          <label for="QTY">QTY </label>
+          <input type="text" name="QTY" class="quantity" value="2" />
+        </div>
+        <div>Total : <span class="TotalPrice"> 0 </span> $</div>
+
+        <div class="btn btn-delete">DELETE</div>
+      </div>
+
+      <div class="container">
+        <div>Nom : <span class="Name"> lAPIN </span></div>
+        <div>Prix : <span class="Cost"> 23 </span>$</div>
+        <div>
+          <label for="QTY">QTY </label>
+          <input type="text" name="QTY" class="quantity" value="2" />
+        </div>
+        <div>Total : <span class="TotalPrice"> 0 </span> $</div>
+
+        <div class="btn btn-delete">DELETE</div>
+      </div>
+
+      <div id="ref" style="display:none">
+        <div>Nom : <span class="Name"> </span></div>
+        <div>Prix : <span class="Cost"> 23 </span>$</div>
+        <div>
+          <label for="QTY">QTY </label>
+          <input type="text" name="QTY" class="quantity" value="2" />
+        </div>
+        <div>Total : <span class="TotalPrice"> 0 </span> $</div>
+
+        <div class="btn btn-delete">DELETE</div>
+      </div>
+    </div>
+
+    <!-- ////////////////////////////////////////// bottom  -->
+
+    <div class="create">
+      <input type="text" id="newName" />
+      <input type="text" id="newPrice" />
+      <button id="new-item-create">Ajouter</button>
+    </div>
+    <div class=" calculate ">
+      <button class="btn btn-success" id="calc-prices-button">
+        Calculate Price
+      </button>
+    </div>
+    <div class="totalPrice">
+      <h1>Total price : <span id="total"></span></h1>
+    </div>
+    <!-- <script type="text/javascript" src="./js/js.js"></script> -->
+  </body>
 </html>
